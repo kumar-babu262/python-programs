@@ -1,0 +1,8 @@
+a=int(input("enter a alue:"))
+b=int(input("enter b value:"))
+print("a+b=",a+b)
+print("a-b=",a-b)
+print("a*b=",a*b)
+print("a/b=",a/b)
+print("a**b=",a**b)
+print("a//b=",a//b)
