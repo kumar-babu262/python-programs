@@ -1,0 +1,6 @@
+lis=[1,2,3,4,5]
+n=int(input ("enter any number "))
+if n in lis:
+    print("yes")
+else:
+    print("no")
