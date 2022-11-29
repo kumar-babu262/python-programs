@@ -1,0 +1,20 @@
+empo=input("enter empno:")
+empname=input("enter empname")
+empdesig=input("enter empdesig:")
+bs=int(input("enter basic salary:"))
+da=int(input("enter daily allowence:"))
+ta=int(input("enter travelling allowence:"))
+hra=int(input("enter house rent allowence:"))
+ns=bs+da+ta+hra
+print("net salary:",ns)
+if ns>100000:
+    tax=ns*10/100
+elif ns>50000 and ns<=100000:
+    tax=ns*7/100
+elif ns>40000 and ns<=50000:
+    tax=ns*4/100
+elif ns>20000 and ns<=40000:
+    tax=ns*2/100
+else:
+    tax=0
+print("tax:",tax)
