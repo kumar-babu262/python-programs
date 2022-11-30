@@ -1,0 +1,18 @@
+cname=input("enter cname:")
+csno=int(input("enter cphno:"))
+cadd=input("enter address:")
+u=int(input("enter units:"))
+bill=0
+if u>0 and u<=30:
+    bill=u*1.90
+elif u>=31 and u<=75:
+    bill=u*3
+elif u>=76 and u<=125:
+    bill=u*4.50
+elif u>=126 and u<=225:
+    bill=u*6
+elif u>=226 and u<=4400:
+    bill=u*8.75
+else:
+    bill=u*9.75
+print("BILL=",bill)
