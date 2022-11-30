@@ -1,0 +1,51 @@
+cname=input("enter cname:")
+cphno=int(input("enter cphno:"))
+add=input("enter address:")
+rice=35
+oil=180
+sugar=54
+flour=35
+salt=10
+r=int(input("enter rice in kgs:"))
+o=int(input("enter oil in lts:"))
+s=int(input("enter sugar in kgs:"))
+f=int(input("enter flour in kgs:"))
+s=int(input("enter salt pkts:"))
+c=input("enter coupan code:")
+bill=(r*rice)+(o*oil)+(s*sugar)+(f*flour)+(s*salt)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=bill+tax
+dis=0
+if c=='DIWALI':
+    if bill>=5000:
+        dis=bill*10/100
+    elif bill>=3000:
+        dis=bill*6/100
+    elif bill>=1000:
+        dis=bill*4/100
+    else:
+        dis=0
+if c=='CHRISMAS':
+    if bill>=3000:
+        dis=bill*20/100
+    elif bill>=2000:
+        dis=bill*10/100
+    elif bill>=1000:
+        dis=bill*5/100
+    else:
+        dis=0
+bill=bill-dis
+print(cname,cphno,add)
+print("------BILL------")
+print("tax=",tax)
+print("discount=",dis)
+print("bill=",bill)
