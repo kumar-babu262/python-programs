@@ -1,0 +1,26 @@
+cname=input("enter cname:")
+cphno=int(input("enter cphno:"))
+add=input("enter address:")
+rice=35
+oil=180
+sugar=54
+flour=35
+salt=10
+r=int(input("enter rice in kgs:"))
+o=int(input("enter oil in lts:"))
+s=int(input("enter sugar in kgs:"))
+f=int(input("enter flour in kgs:"))
+s=int(input("enter salt pkts:"))
+bill=(r*rice)+(o*oil)+(s*sugar)+(f*flour)+(s*salt)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=bill+tax
+print(cname,"\n",cphno,"\n",add,"\n","BILL=",bill)
