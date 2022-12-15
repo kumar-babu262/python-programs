@@ -1,0 +1,13 @@
+n=int(input("enter how many numbers:"))
+x=input()
+l=list(map(int,x.split()))
+el=[]
+ol=[]
+for i in l:
+    if i%2==0:
+        el.append(i)
+    else:
+        ol.append(i)
+s=el+ol
+for j in s:
+    print(j,end=" ")
