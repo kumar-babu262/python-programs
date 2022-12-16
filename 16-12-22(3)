@@ -1,0 +1,6 @@
+n=input ("enter string:")
+c=0
+for i in n:
+    if i.isdigit()==1:
+        c+=1
+print("no of digits=",c)
