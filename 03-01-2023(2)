@@ -1,0 +1,20 @@
+r=int(input("enter row:"))
+c=int(input("entre coloumn:"))
+m=[]
+s=0
+for i in range(0,r):
+    l=[]
+    for j in range(0,c):
+        n=int(input())
+        l.append(n)
+    m.append(l)
+
+for i in range(0,r):
+    for j in range(0,c):
+        print(m[i][j],end=" ")
+    print("\n")
+j=c-1
+for i in range(0,r):
+        s=s+m[i][j]
+        j-=1
+print("sum of left diagnol=",s)
