@@ -1,0 +1,19 @@
+r=int(input())
+c=int(input())
+m=[]
+s=0
+s1=0
+for i in range(0,r):
+  l=[]
+  for j in range(0,c):
+     n=int(input())
+     l.append(n)
+  m.append(l)
+print(m)
+j=c-1
+for i in range(0,r):
+    s=s+m[i][i]
+    if i!=j:
+        s1=s1+m[i][j]
+    j-=1
+print("diagnol sum=",s+s1)
