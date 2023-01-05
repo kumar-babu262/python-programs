@@ -1,0 +1,22 @@
+r=int(input())
+c=int(input())
+m=[]
+for i in range(0,r):
+    l=[]
+    for j in range(0,c):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+k=int(input("enter k value:"))
+l=c-1
+for i in range(0,r):
+    for j in range(0,c):
+        m[i][j]=0
+    m[i][l]=k
+    l-=1
+for i in range(0,r):
+    for j in range(0,c):
+        print(m[i][j],end=" ")
+    print()
+
+        
