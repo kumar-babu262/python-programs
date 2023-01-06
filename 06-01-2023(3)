@@ -1,1 +1,10 @@
-
+email=input()
+p=input()
+c=0
+for i in p:
+    if i.isdigit():
+        c+=1
+if (email.endswith("@gmail.com") or email.endswith("@yahoo.com") or email.endswith("@adc.aditya.ac.in.com")) and c==10:
+    print("Registration successful")
+else:
+    print("Check your details")
